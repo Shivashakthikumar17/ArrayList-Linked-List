@@ -1,0 +1,22 @@
+==>Array List :
+
+List<String> cities = new ArrayList<>();
+cities.add("Tenkasi");
+cities.add("Shencottah");
+cities.add("Elathur");
+System.out.println("First City in the List is "+cities.get(0)); // Accessing the element is fast 0(1)
+cities.set(0,"Courtrallam"); //replacing tenkasi with courtrallam
+cities.remove("Shencottah"); // removing the data is very slow 0(n)
+
+==>Linked List :
+
+LinkedList<String> cities = new LinkedList<>();
+cities.add("Tenkasi");
+cities.add("Shencottah");
+cities.add("Elathur");
+cities.remove("Shencottah"); // removing the data is very slow 0(n)
+System.out.println("First City in the List is "+cities.get(0)); // Accessing the element is fast 0(n)
+cities.remove("Shencottah"); // removing the data is very slow 0(1)
+cities.addFirst("Panpoli"); // Inserting is fast 0(1)
+cities.addLast("Vadakarai"); // Inserting is fast 0(1)
+cities.set(0,"Courtrallam"); //replacing tenkasi with courtrallam
